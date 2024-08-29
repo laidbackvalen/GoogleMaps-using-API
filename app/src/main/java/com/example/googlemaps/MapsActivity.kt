@@ -36,8 +36,9 @@ class MapsActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val mapFragment: SupportMapFragment =
-            supportFragmentManager.findFragmentById(R.id.maps) as SupportMapFragment
+
+
+        val mapFragment: SupportMapFragment = supportFragmentManager.findFragmentById(R.id.maps) as SupportMapFragment
 
         mapFragment.getMapAsync(object : OnMapReadyCallback {
             override fun onMapReady(googleMap: GoogleMap) {
